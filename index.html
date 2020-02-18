@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+    
+<!-- HTML
+
+    HYPERTEXT : TEXTO QUE CONTEM LINKS PARA OUTROS DOCS.
+    
+    
+    MARKUP: MARCAÇÃO / CONTERÁ MARCAÇÕES (TAGS)
+    
+    LANGUAGE:  LINGUAGEM USADA PARA SE COMUNICAR DE CERTA MANEIRA. 
+
+    SINTAXE ESPECIFICA PARA A ESCRITA
+-->
+<html>
+    <head>
+       <!-- configurações da minha página--> 
+      <title>Salve vidas</title>
+      
+      <link rel="stylesheet" href="style.css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    
+      <body>
+             <!--AQUI VEM TODO O CONTEÚDO VISÍVEL APRA O USUAÁRIO, DENTRO DE CERTA PÁGINA -->
+        <header>
+             <img class="logo' 
+             scr="logo.png" alt="Imagem de DOE">
+             
+             <h2>A sua doação importa</h2>
+             <p>Até 3 vidas com 1 doação</p>
+             <p></p>
+             <p>Mais de 38.000 doações são necessários todos os dias.</p>
+             <p>Apenas 1,9% da população brasileira doa sangue</p>
+             <button>Quero ajudar!</button>
+            
+        </header>
+
+        <section class="form hide">
+          <h2>Entre na Lista de doadores</h2>
+          <form action="/">
+            <input 
+                type="text" 
+                name="name"
+                placeholder="Nome Completo"
+            >
+            <input 
+                type="text" 
+                name="email"
+                placeholder="E-mail"
+            >
+            <input 
+                type="text" 
+                name="blood"
+                placeholder="TIpo Sanguineo"
+            >
+            <button>Quero ajudar</button>
+          </form>
+        </section>
+
+        <main>
+          <h2>Ultimos <span>Doadores</span></h2>
+
+          <section class="donors">
+                    <div class="donor">
+                  <div class="blood">A+</div>
+                  <p>Virgínia Maria</p>
+  
+                </div>
+                <div class="donor">
+                    <div class="blood">O+</div>
+                    <p>Terezinha Bezerra</p>
+    
+                  </div>
+                  <div class="donor">
+                      <div class="blood">A-</div>
+                      <p>Delcimar Bezerra</p>
+      
+                    </div>
+                    <div class="donor">
+                        <div class="blood">O-</div>
+                        <p>Emerson Nascimento</p>
+        
+                      </div>
+          </section>
+        </main>
+
+        <footer> Com ❤ Rocketseat</footer>
+      <script src="script.js"></script>
+      </body>
+</html>
