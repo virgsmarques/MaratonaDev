@@ -119,7 +119,7 @@ form button {
 }
 
 /* MAIN */
-main.donors {
+main .donors {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
@@ -148,10 +148,11 @@ main.donors {
     /*fazer a gotinha heheh*/ 
     border-radius: 50%; 
     border-top-right-radius: 0;
+    
     transform: rotate(-45deg)
 }
 
-.donor p p{
+.donor p{
     margin-top: 24px;
     font-size: 14px;
 }
