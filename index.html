@@ -16,7 +16,7 @@
        <!-- configurações da minha página--> 
       <title>Salve vidas</title>
       
-      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="/style.css">
       <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     </head>
     
@@ -24,7 +24,8 @@
              <!--AQUI VEM TODO O CONTEÚDO VISÍVEL APRA O USUAÁRIO, DENTRO DE CERTA PÁGINA -->
         <header>
              <img class="logo' 
-             scr="logo.png" alt="Imagem de DOE">
+             scr="/logo.png" 
+             alt="Imagem de DOE">
              
              <h2>A sua doação importa</h2>
              <p>Até 3 vidas com 1 doação</p>
@@ -37,7 +38,7 @@
 
         <section class="form hide">
           <h2>Entre na Lista de doadores</h2>
-          <form action="/">
+          <form action="/" method="POST">
             <input 
                 type="text" 
                 name="name"
@@ -61,30 +62,19 @@
           <h2>Ultimos <span>Doadores</span></h2>
 
           <section class="donors">
-                    <div class="donor">
-                  <div class="blood">A+</div>
-                  <p>Virgínia Maria</p>
-  
-                </div>
+                   
+            {% for donor in donors %}
+              
                 <div class="donor">
-                    <div class="blood">O+</div>
-                    <p>Terezinha Bezerra</p>
-    
-                  </div>
-                  <div class="donor">
-                      <div class="blood">A-</div>
-                      <p>Delcimar Bezerra</p>
-      
-                    </div>
-                    <div class="donor">
-                        <div class="blood">O-</div>
-                        <p>Emerson Nascimento</p>
-        
-                      </div>
+                      <div class="blood">{{donor.blood}}</div>
+                     <p>{{donor.name}}</p>
+                </div>
+            
+            {%endfor%}   
           </section>
         </main>
 
         <footer> Com ❤ Rocketseat</footer>
-      <script src="script.js"></script>
+      <script src="/script.js"></script>
       </body>
 </html>

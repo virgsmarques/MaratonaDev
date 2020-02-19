@@ -1,0 +1,20 @@
+{
+  "name": "maratonadev",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/virgsmarques/MaratonaDev.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/virgsmarques/MaratonaDev/issues"
+  },
+  "homepage": "https://github.com/virgsmarques/MaratonaDev#readme",
+  "keywords": [],
+  "description": ""
+}
